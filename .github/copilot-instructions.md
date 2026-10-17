@@ -2,7 +2,7 @@
 
 ## Project snapshot
 
-The README identifies this project as `RepairService`. The current tree has no application source or runtime/build manifests, so inspect the repository as it evolves rather than assuming a framework, entry point, or architecture.
+The README identifies this project as `WeRepair`. The current tree has no application source or runtime/build manifests, so inspect the repository as it evolves rather than assuming a framework, entry point, or architecture.
 
 ## Build, test, and lint
 
