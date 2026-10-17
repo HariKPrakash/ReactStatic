@@ -1,0 +1,19 @@
+# WeRepair — local development / demo orchestration.
+#
+# More containers will be added here as the project grows (backend, database,
+# …). Each new service only needs its own folder with a Dockerfile and a
+# `services.<name>` block here.
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # The React app calls the backend over HTTP at runtime. Once a backend
+    # container exists, add it here and point the app at it, for example:
+    #   VITE_API_URL=http://backend:3000/api
+    # (Vite inlines env vars at build time, so this must be set when the
+    # frontend image is built.)
